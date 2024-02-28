@@ -1,0 +1,13 @@
+//Used in Nextjs bundling process to tree shake and code split Prismjs dependencies
+//FUTURE: Find support for SWC plugin instead.
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "python", "bash", "yaml", "json", "apl", "typescript", "toml", "go", "sql", "troy", "php", "java", "ruby", "csharp", "ini", "xml", "rust"]
+      }
+    ],
+  ]
+}
